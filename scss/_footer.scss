@@ -1,0 +1,164 @@
+@import "variable";
+.game_landing__footer {
+    // background-color: $current-colour;
+    padding-inline-start: 21px;
+    padding-inline-end: 26px;
+}
+.game_landing__footer__logo {
+    background-image: url('../images/game_landing_log.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 50px;
+    width: 100%;
+    height: 100px;
+}
+
+.game_landing__footer__logo-link {
+    display: none;
+}
+
+.game_landing__footer__navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.game_landing__footer__list__navigation__about {
+    display: flex;
+    flex-direction: row;
+}
+
+.game_landing__footer__list__navigation__about:nth-of-type(1) > .game_landing__footer__list__navigation__about__game:nth-of-type(1) {
+    background-image: url('../images/red-rectangle.svg');
+    background-repeat: no-repeat;
+    background-position-x: 25%;
+}
+
+.game_landing__footer__list__navigation__about__game {
+    padding-inline-end: 33px;
+}
+
+.game_landing__footer__list__navigation__about__game_link {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.game_landing__footer__list__navigation__social {
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 44px;
+    padding-block-end: 41px;
+    border-block-end: 0.873968px solid #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_landing__footer__list__navigation__social__link_curcor {
+    margin-inline-start: -10px;
+}
+
+.game_landing__footer__list__navigation__social__link {
+    padding-inline-end: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.game_landing__footer__list__navigation__license__copyright {
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    padding-block-end: 26px;
+    padding-block-start: 19px;
+}
+
+.game_landing__footer__navigation__licence__link {
+    font-size: 12px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.game_landing__footer__list__navigation__license {
+    text-align: center;
+}
+
+.game_landing__footer__list__navigation__license__link:nth-of-type(3) > .game_landing__footer__navigation__licence__link {
+    border-inline-start: #FFFFFF solid 2px;
+    border-inline-end: #FFFFFF solid 2px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
+}
+
+.game_landing__footer__list__navigation__social__link svg {
+    fill: white;
+}
+.game_landing__footer__list__navigation__social__link_facebook svg:hover {
+    fill: navy;
+}
+
+.game_landing__footer__list__navigation__social__link_twitter svg:hover {
+    fill: lightblue;
+}
+
+.game_landing__footer__list__navigation__social__link_twitch svg:hover {
+    fill: purple;
+}
+
+
+
+
+
+@media(min-width: 1200px) {
+    .game_landing__footer {
+        position: relative;
+    }
+
+    .game_landing__footer__logo {
+        background-position: 10%;
+    }
+    .game_landing__footer__navigation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-block-start: -70px;
+        border-block-end: 0.873968px solid #FFFFFF;
+        margin-inline-start: 130px;
+        margin-inline-end: 58px;
+        padding-block-end: 20px;
+    }
+
+    .game_landing__footer__list__navigation__about {
+        display: flex;
+        flex-direction: row;
+        padding-inline-start: 0;
+    }
+
+    .game_landing__footer__list__navigation__social {
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-block-end: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .game_landing__footer__list__navigation__license {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+        padding-inline-start: 0;
+        flex-wrap: wrap;
+    }
+} 

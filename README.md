@@ -1,1 +1,1 @@
-# game-landing-app
+# Game-landing-page

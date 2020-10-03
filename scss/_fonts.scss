@@ -1,0 +1,44 @@
+@import"variable";
+
+$font-faces : (
+    (
+        name: "Open Sans Regular",
+        system-name: 'Open-Sans-Regular',
+        style: normal,
+        family: 'Open Sans',
+        weight: 400,
+        filename: 'openSans-regular',
+    ), 
+    (
+        name: "Open Sans Bold",
+        system-name: 'Open-Sans-Bold',
+        style: normal,
+        family: 'Open Sans',
+        weight: 700,
+        filename: 'openSans-bold',
+    ),
+    (
+        name: "Bebas Neue",
+        system-name: 'Bebas-Neue-Regular',
+        style: normal,
+        family: 'Bebas Neue',
+        weight: 400,
+        filename: 'bebasNeue-regular',
+    ),
+  
+);
+
+  
+  
+@each $font in $font-faces {
+    @font-face {
+    font-family: map-get($font, family);
+    font-weight: map-get($font, weight);
+    font-style: map-get($font, style);
+    src: 
+        local(map-get($font, name)),
+        local(map-get($font, system-name))
+        url("../fonts/#{map-get($font, filename)}.woff2") formt(woff2),
+        url("../fonts/#{map-get($font, filename)}.woff") format(woff) ;
+    }
+}

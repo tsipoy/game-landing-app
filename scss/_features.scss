@@ -1,0 +1,96 @@
+@import "variable";
+
+.game_landing__container__features {
+    background-image: 
+        url('../images/bg-feature.png'),
+        url('../images/feature-background-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30%;
+    padding-block-start: 50px;
+    margin-inline-start: -100px;
+    padding-inline-end: 24px;
+}
+
+.game_landing__container__features__big_title {
+    margin-block-end: -15px;
+}
+
+.game_landing__container__features__subtitle {
+    margin-block-end: -38px;
+}
+
+.game_landing__container__features__header {
+    padding-inline-start: 30px;
+}
+
+.game_landing__container__features__wrapper {
+    max-width: calc(100% / 2);
+    margin-inline-start: auto;
+    text-align: justify;
+    padding-block-end: 61px;
+}
+
+.game_landing__container__features__wrapper::before {
+    height: 50%;
+    width: 2px;
+}
+
+.game_landing__container__features__description_title {
+    padding-inline-start: 30px;
+}
+
+.game_landing__container__features__description:nth-of-type(1) {
+    background-image: url('../images/ellipse-white.png');
+    background-repeat: no-repeat;
+    background-position-y: 2.8rem;
+}
+
+.game_landing__container__features__description:nth-of-type(2) {
+    background-image: url('../images/ellipse-transparent.png');
+    background-repeat: no-repeat;
+    background-position-y: 2.8rem;
+}
+
+.game_landing__container__features__description:nth-of-type(3) {
+    background-image: url('../images/ellipse-transparent.png');
+    background-repeat: no-repeat;
+    background-position-y: 2.8rem;
+}
+
+.game_landing__container__features__description_text {
+    border-inline-start: 1.95955px solid #FFFFFF;
+    margin-inline-start: 7px;
+    padding-block-end: 20px;
+    padding-block-start: 20px;
+    margin-block-end: -47px;
+    margin-block-start: -27px;
+    padding-inline-start: 20px;
+}
+
+
+summary::-webkit-details-marker { 
+    color: transparent;
+}
+
+@media(min-width: 1200px) {
+    .game_landing__container__features {
+        background-image: url(../images/feature-background-semi-transparent.png), url(../images/feature-background-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left 2px;
+        padding-block-start: 50px;
+        margin-inline-start: -100px;
+        padding-inline-end: 24px;
+        padding-inline-start: 231px;
+        max-width: 1441px;
+    }
+
+    .game_landing__container__features__header {
+        padding-block-start: 167px;
+    }
+
+    .game_landing__container__features__description:nth-of-type(3) {
+        padding-block-end: 200px;
+    }
+}

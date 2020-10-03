@@ -1,0 +1,126 @@
+@import "variable";
+
+.game_landing__container__quotes {
+    padding-block-start: 36px;
+    padding-block-end: 80px;
+}
+
+.game_landing__container__quotes__header__subtitle {
+    margin-block-end: -30px;
+}
+
+.game_landing__container__quotes__header__text {
+    padding-block-start: 30px;
+    padding-block-end: 50px;
+}
+
+.testemonials_link {
+    text-align: center;
+}
+
+.game_landing__container__quotes__header__link {
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    padding-block-start: 11px;
+    padding-block-end: 15px;
+    padding-inline-start: 9px;
+    padding-inline-end: 14px;
+    border-radius: 2.94008px;
+    color: #1A1917;
+}
+
+.game_landing__container__quotes__navigation__list_quote {
+    padding-block-start: 29px;
+    padding-block-end: 17px;
+}
+
+.game_landing__container__quotes__navigation__list {
+    margin-block-end: 20px;
+    margin-block-start: 50px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding-block-end: 15px;
+    padding-block-start: 9px;
+    padding-inline-end: 51px;
+    padding-inline-start: 28px;
+}
+
+.date,
+.job {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.job {
+    padding-inline-start: 60px;
+}
+
+.first_quote{
+    background-image: 
+        url('../images/evan-lathi.png'),
+        url('../images/twitter-svg.svg');
+    background-repeat: no-repeat;
+    background-position: left, right;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+    padding-inline-start: 60px;
+}
+
+.second_quote {
+    background-image: 
+        url('../images/jada-griffin.png'),
+        url('../images/twitter-svg.svg');
+    background-repeat: no-repeat;
+    background-position: left, right;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+    padding-inline-start: 60px;
+}
+
+.third_quote {
+    background-image: 
+        url('../images/aaron-williams.png'),
+        url('../images/twitter-svg.svg');
+    background-repeat: no-repeat;
+    background-position: left, right;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+    padding-inline-start: 60px;
+}
+
+@media(min-width: 1200px) {
+    .game_landing__container__quotes {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .game_landing__container__quotes__header {
+        max-width: 437px;
+        margin-block-start: auto;
+        margin-inline-start: 130px;
+        margin-block-end: auto;
+        margin-inline-end: auto;
+    }
+
+    .game_landing__container__quotes__navigation {
+        max-width: calc(100% - 437px);
+        padding-inline-end: 47px;
+    }
+
+    .testemonials_link {
+        text-align: start;
+    }
+
+    .game_landing__container__quotes__navigation__list:nth-of-type(1) {
+        margin-inline-start: 193px;
+    }
+
+    .game_landing__container__quotes__navigation__list:nth-of-type(2) {
+        margin-inline-end: 100px;
+        margin-inline-start: 73px;
+    }
+
+    .game_landing__container__quotes__navigation__list:nth-of-type(3) {
+        margin-inline-start: 193px;
+    }
+
+}

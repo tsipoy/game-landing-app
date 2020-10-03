@@ -1,0 +1,105 @@
+@import "variable";
+
+.game_landing__container__newsletter {
+    background-image:
+        url('../images/bg-news-letter-gradient.png'),
+        url('../images/mayan-raul-osorio-totem.png');
+    background-repeat: no-repeat;
+    background-size: 270px;
+    background-position-x: calc((230 / 2) * -1px);
+    padding-block-end: 61px;
+}
+
+.game_landing__container__newsletter__header {
+    padding-inline-start: calc(100% / 3);
+    padding-block-start: 25px;
+    margin-block-end: -15px;
+}
+
+.game_landing__container__newsletter__header__big_title {
+    margin-block-start: -15px;
+}
+
+.game_landing__container__newsletter__div {
+    padding-inline-start: calc(100% / 3);
+    padding-block-end: 61px;    
+}
+
+.game_landing__container__newsletter__div__email_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.game_landing__container__newsletter__div__email_label {
+    width: 100%;
+}
+
+.game_landing__container__newsletter__div__email_input {
+    background: rgba(255, 255, 255, 0.08);
+    padding-block-end: 15px;
+    padding-block-start: 11px;
+    color: #FFB548;
+    margin-block-end: 20px;
+    width: -webkit-fill-available;
+    border-radius: 5px;
+}
+
+.game_landing__container__newsletter__div__subscribe_button {
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 2.94008px;
+    padding-block-end: 15px;
+    padding-block-start: 11px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #1A1917;
+}
+
+
+@media(min-width: 1200px) {
+    .game_landing__container__newsletter {
+
+        background-image:
+            url('../images/status.png'),
+            url('../images/mayan-raul-osorio-totem.png');
+        // background: radial-gradient(45.43% 53.19% at 50% 50%, transparent 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%);
+        background-repeat: no-repeat;
+        background-position: 20%;
+    }
+    .game_landing__container__newsletter__header,
+    .game_landing__container__newsletter__div {
+        max-width: 50%;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+    }
+
+    .game_landing__container__newsletter__div__text {
+        padding-block-start: 60px;
+        padding-block-end: 40px;
+    }
+
+    .game_landing__container__newsletter__div__email_form {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        max-width: 50%;
+        margin-inline-start: auto;
+        flex-wrap: nowrap;
+    }
+
+    .game_landing__container__newsletter__div__email_label {
+        padding-inline-end: 17px;
+    }
+
+    .game_landing__container__newsletter {
+        width: 100%;
+        padding-inline-end: 17px;
+    }
+
+    .game_landing__container__newsletter__div__subscribe_button {
+        width: 75%;
+    }
+
+}

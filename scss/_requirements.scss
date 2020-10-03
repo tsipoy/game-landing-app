@@ -1,0 +1,63 @@
+@import "variable";
+
+.game_landing__container__requirements {
+    background-image: url('../images/requirements-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-block-start: 0;
+}
+
+
+.game_landing__container__requirements__header {
+    padding-block-start: 60px;
+}
+
+.game_landing__container__requirements__header__title {
+    margin-block-end: -30px;
+}
+
+.game_landing__container__requirements__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.game_landing__container__requirements__list__inner {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border: 0.504234px solid #979797;
+    padding-inline-start: 9px;
+    padding-block-end: 20px;
+    border-block-end: none;
+    margin: 0;
+}
+
+.game_landing__container__requirements__list__inner:last-of-type {
+    grid-column: 1 / 3;
+    border-block-end: 0.504234px solid #979797;
+    margin-block-end: 250px;
+}
+
+@media(min-width: 1200px) {
+    .game_landing__container__requirements {
+    background-image: 
+        url('../images/bg-requirement-gradient.png'), 
+        url('../images/bg-requirement.png');
+    background-repeat: no-repeat;
+    max-width: 1441px;
+    }
+
+    .game_landing__container__requirements__header {
+        text-align: center;
+        padding-block-start: 145px;
+    }
+
+    .game_landing__container__requirements__list {
+        max-width: 573px;
+        padding-block-start: 100px;
+        padding-inline-start: 121px;
+    }
+}
